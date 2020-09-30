@@ -1,0 +1,24 @@
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>Users</title>
+  </head>
+  <body>
+    <h1>here are your user:</h1>
+    {% if users %}
+      <ol>
+          {% for user in users %}
+          <li>user info</li>
+            <ul>
+                <li>first name : {{ user.name }}</li>
+                <li>last_name : {{ user.last_name }}</li>
+                <li>email : {{ user.email }}</li>
+
+            </ul>
+          {% endfor %}
+      </ol>
+    {% endif %}
+
+  </body>
+
+</html>
